@@ -29,7 +29,7 @@ Records in the YugabyteDB `ysql_hba.conf` file are auto generated based on the v
 For example, starting a YB-TServer with the following `--ysql_hba_conf_csv` flag enables trust authentication for all users:
 
 ```sh
---ysql_hba_conf_csv='host all all 0.0.0.0/0 trust, host all all ::0/0 trust'
+--ysql_hba_conf_csv=host all all 0.0.0.0/0 trust, host all all ::0/0 trust
 ```
 
 To display the current values in the `ysql_hba.conf` file, run the following `SHOW` statement to get the file location:
